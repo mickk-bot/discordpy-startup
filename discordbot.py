@@ -7,19 +7,19 @@ token = os.environ['DISCORD_BOT_TOKEN']
 
 
 @bot.event
-async def on_command_error(message, error):
+async def on_command_error(ctx, error):
     orig_error = getattr(error, "original", error)
     error_msg = ''.join(traceback.TracebackException.from_exception(orig_error).format())
-    await message.send(error_msg)
+    await ctx.send(error_msg)
 
 
 @bot.command()
-async def ping(message):
-    await message.send('pong')    
+async def ping(ctx):
+    await ctx.send('pong')    
     
 @bot.command()
-async def おはよう(message):
-    await message.send("おはようございます" + message.author.name + "さん！") 
+async def おはよう(ctx):
+    await ctx.send("おはようございます" + ctx.author.name + "さん！") 
     
 @bot.command()
 async def こんにちは(ctx):
