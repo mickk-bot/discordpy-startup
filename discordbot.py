@@ -24,7 +24,15 @@ async def neko(ctx):
     
 @bot.command()
 async def おはよう(ctx):
-    await ctx.send('おはよう') 
+    await ctx.send('おはよう!') 
+    
+@bot.command()
+async def こんにちは(ctx):
+    await ctx.send('こんにちは!')
+    
+@bot.command()
+async def おやすみ(ctx):
+    await ctx.send('おやすみなさい!')
     
 
 bot.run(token)
