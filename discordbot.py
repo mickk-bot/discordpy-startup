@@ -32,7 +32,7 @@ async def こんにちは(ctx):
     
 @bot.command()
 async def おやすみ(ctx):
-    await ctx.send("おやすみ" + ctx.author.name + "さん！")
+    await ctx.send("おやすみなさい" + ctx.author.name + "さん！")
     
 @bot.command()
 async def name(ctx):
