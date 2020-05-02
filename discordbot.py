@@ -19,11 +19,11 @@ async def ping(ctx):
     
 @bot.command()
 async def neko(ctx):
-    await ctx.send('おはよう')
+    await ctx.send('にゃーん')
     
     
 @bot.command()
-async def pong(ctx):
+async def gm(ctx):
     await ctx.send('おはよう') 
     
 
