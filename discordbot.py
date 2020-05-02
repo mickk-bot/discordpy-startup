@@ -34,5 +34,9 @@ async def こんにちは(ctx):
 async def おやすみ(ctx):
     await ctx.send('おやすみなさい!')
     
+@bot.command()
+async def name(ctx):
+    await ctx.send(message.author.name)
+    
 
 bot.run(token)
