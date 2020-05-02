@@ -23,7 +23,7 @@ async def neko(ctx):
     
     
 @bot.command()
-async def おはよう(ctx):
+async def (ctx):
     await ctx.send('おはよう') 
     
 
