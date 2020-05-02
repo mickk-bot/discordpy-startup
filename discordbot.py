@@ -23,7 +23,7 @@ async def neko(ctx):
     
     
 @bot.command()
-async def on_message(message):
+async def on_message(ctx):
     # 「おはよう」で始まるか調べる
     if message.content.startswith("おはよう"):
         # 送り主がBotだった場合反応したくないので
