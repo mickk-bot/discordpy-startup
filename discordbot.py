@@ -24,15 +24,15 @@ async def neko(ctx):
     
 @bot.command()
 async def おはよう(ctx):
-    await ctx.send('おはよう!') 
+    await ctx.send("おはようございます" + ctx.author.name + "さん！") 
     
 @bot.command()
 async def こんにちは(ctx):
-    await ctx.send('こんにちは!')
+    await ctx.send("こんにちは" + ctx.author.name + "さん！")
     
 @bot.command()
 async def おやすみ(ctx):
-    await ctx.send('おやすみなさい!')
+    await ctx.send("おやすみ" + ctx.author.name + "さん！")
     
 @bot.command()
 async def name(ctx):
